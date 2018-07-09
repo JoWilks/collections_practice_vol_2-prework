@@ -24,7 +24,7 @@ def merge_data(keys, data)
   hash = {}
   keys.each { |key| #puts "#{key}!" 
     key.each { |k, first_name| #puts "#{k} and #{first_name}!!"
-        hash[k] = name
+        hash[k] = first_name
         data.each {|key| 
           key.each {|name, all_traits|
             #if name == first_name
