@@ -31,6 +31,9 @@ def merge_data(keys, data)
               #hash[k] = name
               all_traits.each {|title_trait, value_trait|
                 hash[title_trait] = value_trait
+                binding pry
+              
+                
               }
               arr << hash
             #end  
