@@ -34,10 +34,7 @@ def merge_data(keys, data)
               }
               arr << hash
             #end  
-            }
-          }
-        }
-    }
+            }}}}
   arr
 end
 
