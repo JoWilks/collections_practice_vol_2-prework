@@ -1,3 +1,5 @@
+require 'pry'
+
 def begins_with_r(array)
   array.all? {|element| element[0] == "r" }
 end
@@ -38,6 +40,7 @@ def merge_data(keys, data)
             }}}}
   arr
 end
+
 
 def find_cool(cool)
 arr = []
