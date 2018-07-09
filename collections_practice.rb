@@ -22,10 +22,10 @@ end
 def merge_data(keys, data)
   arr=[]
   hash = {}
-  keys.each { |key| #puts "#{key}!" 
-    key.each { |k, first_name| #puts "#{k} and #{first_name}!!"
+  keys.each { |key| 
+    key.each { |k, first_name|            #iterates through Keys
         hash[k] = name
-        data.each {|key| 
+        data.each {|key|                  #iterates through Data
           key.each {|name, all_traits|
             #if name == first_name
               #hash[k] = name
