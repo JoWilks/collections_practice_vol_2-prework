@@ -25,7 +25,7 @@ def merge_data(keys, data)
   keys.each { |key| 
     key.each { |k, first_name|            #iterates through Keys
         #hash[k] = first_name             #adds :k => first_name to empty hash
-        data.each {|key|                  #iterates through Data
+        data.each {|key|                  
           key.each {|name, all_traits|
             if name == first_name                           #checks if first_name in Keys array matches name in Data array if so...
               hash[k] = name                                #adds :k => first_name to empty hash
