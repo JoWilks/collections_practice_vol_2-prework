@@ -1,5 +1,3 @@
-require 'pry'
-
 def begins_with_r(array)
   array.all? {|element| element[0] == "r" }
 end
