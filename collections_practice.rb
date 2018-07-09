@@ -38,7 +38,6 @@ def merge_data(keys, data)
   arr
 end
 
-
 def find_cool(cool)
 arr = []
   cool.each { |a, b| puts "main key = #{a}, array = #{b}."
