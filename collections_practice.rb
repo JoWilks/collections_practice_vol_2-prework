@@ -20,18 +20,25 @@ end
 
 
 def merge_data(keys, data)
-
-  keys.each { |key| puts "#{key}!" 
-    key.each { |k, first_name | puts "#{k} and #{first_name}!!"   }
-  }
-
-  data.each { |key| puts "#{key}@"  
-    key.each {|name, all_traits|  puts "#{name} and #{all_traits}@@"
-      traits.each {|title_trait, value_trait| puts "#{title_trait} and #{value_trait}@@@"
-      }
-    } 
-  }
-
+  arr=[]
+  hash = {}
+  keys.each { |key| #puts "#{key}!" 
+    key.each { |k, first_name| #puts "#{k} and #{first_name}!!"
+        hash[k] = name
+        data.each {|key| 
+          key.each {|name, all_traits|
+            #if name == first_name
+              #hash[k] = name
+              all_traits.each {|title_trait, value_trait|
+                hash[title_trait] = value_trait
+              }
+              arr << hash
+            #end  
+            }
+          }
+        }
+    }
+  arr
 end
 
 def find_cool(cool)
